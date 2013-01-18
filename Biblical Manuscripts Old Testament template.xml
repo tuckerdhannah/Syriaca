@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="enrich-wamcp.rnc" type="xml"?>
+<?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
+        <fileDesc>
+            <titleStmt>
+                <title>Digital Catalogue of the Syriac Manuscripts in the British Library</title>
+                <!--we need to work this out further-->
+                <funder>National Endowment for the Humanities</funder>
+                <principal>David Michelson</principal>
+            </titleStmt>
+            <publicationStmt>
+                <date calendar="Gregorian"></date><!-- Date of our publication, need to identify a standard format for this -->
+                <publisher>Syriaca.org</publisher>
+                <pubPlace>
+                    <address>-
+                <addrLine></addrLine>
+                <addrLine><!--we need to work this out further--></addrLine>
+               <street></street>
+                <settlement></settlement>
+                <postCode></postCode>
+                <addrLine><ref target=""></ref></addrLine>
+                <addrLine><email></email></addrLine>
+                </address>
+                </pubPlace>
+                <idno>Syriaca.org</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xmlns="http://www.tei-c.org/ns/1.0" xml:id="Syriaca.org" xml:lang="en">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <settlement>London</settlement>
+                        <repository>British Library</repository>
+                        <collection>Additional MSS</collection>
+                        <!--Collection will very occaisionally change. Look for the collection here: http://www.bl.uk/reshelp/findhelprestype/manuscripts/ongoingcoll/ongoingcollections.html#egerton -->
+                        <idno></idno><!-- The identification number Wright notes at the conclusion of the specific entry -->
+                        <altIdentifier type="other"><!-- Probably won't be using this -->
+                            <idno/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <summary>Biblical Manuscripts: Old Testament</summary>
+                        <!--take this from the heading at the top of the page in Wright-->
+                        <textLang mainLang="syr">Syriac</textLang>
+                        <!--Check to make sure MSS is not in Garshuni-->
+                        <msItem n="1" xml:id="a1" class="#translation">
+                            <locus from=""></locus><!-- Enter extent of msItem both within the attribute of the tag (e.g., from="1-24b") and between the tags (e.g., foll. 1-24b) -->
+                            <author key=""/>
+                            <title key="" ref="http://lccn.loc.gov/"></title><!-- Use Library of Congress URI for Old Testament -->
+                            <rubric xml:lang="syr"></rubric><!-- If the entry contains the Syriac title of the text -->
+                            <incipit xml:lang="syr"></incipit><!-- If the entry contains the first Syriac lines of the actual text -->
+                            <explicit xml:lang="syr"></explicit><!-- If the entry contains the final Syriac lines of the actual text -->
+                            <finalRubric xml:lang="syr"></finalRubric><!-- If the entry contains a subscription -->
+                            <listBibl><!-- This is where we want to code Wright's classification IDs -->
+                                <bibl>
+                                    <ref target=""></ref><!-- Enter URI for Wright's roman numerals -->
+                                </bibl>
+                                <bibl>
+                                    <ref target=""></ref><!-- Enter URI for Wright's page number -->
+                                </bibl>
+                            </listBibl>
+                            <textLang mainLang="syr">Syriac</textLang>
+                            <!--Check to make sure MSS is not in Garshuni-->
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support><material>vellum</material></support><!--verify material of the entry, being sure to also change the attributes in objectDesc and supportDesc as necessary -->
+                                <extent> ff. <!-- The number of folia in Wright's entry, entered here as plain text contained in the extent tag -->
+                                    <dimensions type="leaf" unit="in"><!-- Dimensions of the physical page, if available -->
+                                        <height/>
+                                        <width/>
+                                    </dimensions>
+                                    <dimensions type="written" unit="in"><!-- Dimensions of written space, if available -->
+                                        <height></height>
+                                        <width></width>
+                                    </dimensions>
+                                </extent>
+                                <foliation xml:id="ancient"><!-- What ancient foliation systems are in place? -->
+                                    <locus from="" to=""></locus><!-- Enter extent both within the opening tag and between the tags -->
+                                    <p></p><!-- Enter the text of Wright's description -->
+                                </foliation>
+                                <foliation xml:id="modern"><!-- What modern (which we should maybe define as broadly as "not original to the production of the text") foliation systems are in place? -->
+                                    <locus from="" to=""></locus><!-- Enter extent both within the opening tag and between the tags -->
+                                    <p></p><!-- Enter the text of Wright's description -->
+                                </foliation>
+                                <collation>
+                                    <p></p>
+                                    <seg n="1" type="gathering">
+                                        <locus from="" to=""></locus>
+                                        <formula></formula>
+                                    </seg>
+                                </collation>
+                                <condition>
+                                    <p><locus/></p><!-- Enter Wright's description of document condition, if available, including locus -->
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="" writtenlines="">
+                                    <p></p><!-- Enter Wright's exact text in addition to coding it -->
+                                    <locus from="" to=""></locus>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="major" script="Estrangela" medium="unknown"><!-- Once we have a schema ready to accomodate all of these identifiers, be sure to change this as necessary according to Wright -->
+                                <desc></desc><!-- Enter Wright's description -->
+                                <persName xml:lang="syr" type="supplied"/><!-- If the name of the scribe is known -->
+                            </handNote>
+                        </handDesc>
+                        <additions>
+                            <list>
+                                <item>
+                                    <label>marginalia</label>Marginal notes in 
+                                    <locus from="" to=""></locus>, 
+                                    <locus from="" to=""></locus>. 
+                                </item>
+                                <item>
+                                    <label></label> 
+                                </item>
+                                <item>
+                                    <label></label> 
+                                </item>
+                            </list>
+                            <catchwords></catchwords>
+                        </additions>
+                        <bindingDesc>
+                            <p>
+                                <date calendar="gregorian" from="" to=""></date>
+                                <material></material>
+                            </p>
+                            <decoNote type="illustration">
+                            </decoNote>
+                            <condition></condition>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <summary/>
+                        <origin>
+                            <date calendar="Gregorian"></date></origin>
+                        <provenance/>
+                        <acquisition></acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source></source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p></p>
+                            </availability>
+                            <note/>
+                        </adminInfo>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl><ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of
+                            Congress Subject Headings</ref></bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item></item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2010-05-06">
+                <persName></persName></change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <!-- facsimile information about the manuscript -->
+        <graphic/>
+        <!-- Alternatively you could provide 'surface' elements with more than one image per surface, and optionally with 'zone' 
+            elements to give coordinates for any special areas of interest -->
+    </facsimile>
+    <text>
+        <body>
+            <!-- If you had a transcription of the manuscript you would put it here -->
+            <p/>
+        </body>
+    </text>
+</TEI>
