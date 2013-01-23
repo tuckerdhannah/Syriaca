@@ -47,7 +47,64 @@
                         <msItem n="1" xml:id="a1" class="#translation">
                             <locus from=""></locus><!-- Enter extent of msItem both within the attribute of the tag (e.g., from="1-24b") and between the tags (e.g., foll. 1-24b) -->
                             <author key=""/>
-                            <title key="" ref="http://lccn.loc.gov/"></title><!-- Use Library of Congress URI for Old Testament -->
+                            <title key="" ref="http://lccn.loc.gov/"></title><!-- Use Library of Congress URI found at http://authorities.loc.gov/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=First -->
+                            <rubric xml:lang="syr"></rubric><!-- If the entry contains the Syriac title of the text -->
+                            <incipit xml:lang="syr"></incipit><!-- If the entry contains the first Syriac lines of the actual text -->
+                            <explicit xml:lang="syr"></explicit><!-- If the entry contains the final Syriac lines of the actual text -->
+                            <finalRubric xml:lang="syr"></finalRubric><!-- If the entry contains a subscription -->
+                            <listBibl><!-- This is where we want to code Wright's classification IDs -->
+                                <bibl>
+                                    <ref target=""></ref><!-- Enter URI for Wright's roman numerals -->
+                                </bibl>
+                                <bibl>
+                                    <ref target=""></ref><!-- Enter URI for Wright's page number -->
+                                </bibl>
+                            </listBibl>
+                            <textLang mainLang="syr">Syriac</textLang>
+                            <!--Check to make sure MSS is not in Garshuni-->
+                            <msItem n="1" xml:id="b1" class="#translation"><!-- Subordinate msItem, part of item xml:id=a1, implies there will be an item xml:id=b2 -->
+                                <locus from=""></locus><!-- Enter extent of msItem both within the attribute of the tag (e.g., from="1-24b") and between the tags (e.g., foll. 1-24b) -->
+                                <author key=""/>
+                                <title key="" ref="http://lccn.loc.gov/"></title><!-- Use Library of Congress URI found at http://authorities.loc.gov/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=First -->
+                                <rubric xml:lang="syr"></rubric><!-- If the entry contains the Syriac title of the text -->
+                                <incipit xml:lang="syr"></incipit><!-- If the entry contains the first Syriac lines of the actual text -->
+                                <explicit xml:lang="syr"></explicit><!-- If the entry contains the final Syriac lines of the actual text -->
+                                <finalRubric xml:lang="syr"></finalRubric><!-- If the entry contains a subscription -->
+                                <listBibl><!-- This is where we want to code Wright's classification IDs -->
+                                    <bibl>
+                                        <ref target=""></ref><!-- Enter URI for Wright's roman numerals -->
+                                    </bibl>
+                                    <bibl>
+                                        <ref target=""></ref><!-- Enter URI for Wright's page number -->
+                                    </bibl>
+                                </listBibl>
+                                <textLang mainLang="syr">Syriac</textLang>
+                                <!--Check to make sure MSS is not in Garshuni-->
+                                <msItem n="1" xml:id="c1" class="#translation"><!-- Subordinate msItem, part of item xml:id=b1, implies there will be an item xml:id=c2 -->
+                                    <locus from=""></locus><!-- Enter extent of msItem both within the attribute of the tag (e.g., from="1-24b") and between the tags (e.g., foll. 1-24b) -->
+                                    <author key=""/>
+                                    <title key="" ref="http://lccn.loc.gov/"></title><!-- Use Library of Congress URI found at http://authorities.loc.gov/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=First -->
+                                    <rubric xml:lang="syr"></rubric><!-- If the entry contains the Syriac title of the text -->
+                                    <incipit xml:lang="syr"></incipit><!-- If the entry contains the first Syriac lines of the actual text -->
+                                    <explicit xml:lang="syr"></explicit><!-- If the entry contains the final Syriac lines of the actual text -->
+                                    <finalRubric xml:lang="syr"></finalRubric><!-- If the entry contains a subscription -->
+                                    <listBibl><!-- This is where we want to code Wright's classification IDs -->
+                                        <bibl>
+                                            <ref target=""></ref><!-- Enter URI for Wright's roman numerals -->
+                                        </bibl>
+                                        <bibl>
+                                            <ref target=""></ref><!-- Enter URI for Wright's page number -->
+                                        </bibl>
+                                    </listBibl>
+                                    <textLang mainLang="syr">Syriac</textLang>
+                                    <!--Check to make sure MSS is not in Garshuni-->
+                                </msItem><!-- Closes item c1 -->
+                            </msItem><!-- Closes item b1 -->
+                        </msItem><!-- Closes item a1 -->
+                        <msItem n="2" xml:id="a2" class="#translation">
+                            <locus from=""></locus><!-- Enter extent of msItem both within the attribute of the tag (e.g., from="1-24b") and between the tags (e.g., foll. 1-24b) -->
+                            <author key=""/>
+                            <title key="" ref="http://lccn.loc.gov/"></title><!-- Use Library of Congress URI found at http://authorities.loc.gov/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=First -->
                             <rubric xml:lang="syr"></rubric><!-- If the entry contains the Syriac title of the text -->
                             <incipit xml:lang="syr"></incipit><!-- If the entry contains the first Syriac lines of the actual text -->
                             <explicit xml:lang="syr"></explicit><!-- If the entry contains the final Syriac lines of the actual text -->
