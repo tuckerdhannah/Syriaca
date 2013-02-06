@@ -163,7 +163,7 @@
                         </objectDesc>
                         <handDesc>
                             <handNote scope="major" script="Estrangela" medium="unknown"><!-- Once we have a schema ready to accomodate all of these identifiers, be sure to change this as necessary according to Wright -->
-                                <desc></desc><!-- Enter Wright's description -->
+                                <p/><!-- Enter Wright's description -->
                                 <persName xml:lang="syr" type="supplied"/><!-- If the name of the scribe is known -->
                             </handNote>
                         </handDesc>
